@@ -43,13 +43,13 @@
   <p class="lead">Your issue data stays inside your own Jira site. Nothing about it is sent to us or to anyone else.</p>
 
   <h2>What the app reads</h2>
-  <p>The app reads the Jira issues that match the query you type, using your own Jira permissions, through Atlassian's own APIs. It also reads your site's field list so the field picker can show your real fields. It is read-only: it never creates, changes or deletes anything in Jira.</p>
+  <p>The app reads the Jira issues that match the query you type, using your own Jira permissions, through Atlassian's own APIs. It also reads your site's field list so the field picker can show your real fields, and your own display name so a saved pivot can show who saved it. It is read-only: it never creates, changes or deletes anything in Jira.</p>
 
   <h2>Where that data goes</h2>
   <p>Nowhere. The issues are shown to you in your browser and are gone when you close the page. The app makes no connections to any server of ours, because there are none. There is no analytics, no tracking and no third party service of any kind in the app.</p>
 
   <h2>What is stored, and where</h2>
-  <p>Saved pivot definitions (a name, your query, the field layout and the display choices) and your last used settings are stored in Atlassian's Forge storage for your site, inside Atlassian's cloud, under Atlassian's own terms. No issue data is stored there, only the definition of how to build the table. Deleting a saved pivot deletes it.</p>
+  <p>Saved pivot definitions (the pivot's name, your query, the field layout, the display choices and the display name of the person who saved it) and your last used settings are stored in Atlassian's Forge storage for your site, inside Atlassian's cloud, under Atlassian's own terms. Saved pivots are shared with the other people on your site who use the app, which is what makes the shared list and the dashboard gadget work; your own last used settings stay private to your account. No issue data is stored there, only the definition of how to build the table. Deleting a saved pivot deletes it.</p>
 
   <h2>What we can see</h2>
   <p>Nothing about your issues. The only thing the Atlassian Marketplace reports to any app vendor is install counts and which versions of the app a site runs, and that is all we ever see.</p>
