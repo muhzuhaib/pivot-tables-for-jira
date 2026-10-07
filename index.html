@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pivot Tables for Jira</title>
+<meta name="description" content="Support for Pivot Tables for Jira, a Forge app that turns your Jira issues into a pivot table: drag fields into rows and columns, total them, and click any number to see the issues behind it.">
+<style>
+  :root {
+    --page: #faf9f7; --surface: #fff; --text: #1c1917; --body: #2b2724;
+    --secondary: #57524e; --tertiary: #726c66;
+    --stroke: rgba(28, 25, 23, .12); --accent: #2560d0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0f0f10; --surface: #1b1b1d; --text: #f5f2ef; --body: #ece7e2;
+      --secondary: #c6bfb9; --tertiary: #9a938b;
+      --stroke: rgba(255, 255, 255, .12); --accent: #7fb2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--body);
+         font: 16px/1.6 -apple-system, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 660px; margin: 0 auto; padding: 56px 24px 72px; }
+  h1 { font-size: 32px; line-height: 1.15; color: var(--text); margin: 0 0 8px; font-weight: 600; }
+  h2 { font-size: 20px; color: var(--text); margin: 40px 0 12px; font-weight: 600; }
+  h3 { font-size: 17px; color: var(--text); margin: 22px 0 4px; font-weight: 600; }
+  .lead { font-size: 18px; color: var(--secondary); margin: 0; }
+  .eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+             color: var(--accent); margin: 0 0 12px; font-weight: 600; }
+  ul { padding-left: 22px; } li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .card { background: var(--surface); border: 1px solid var(--stroke);
+          border-radius: 12px; padding: 18px 20px; margin: 20px 0; }
+  .foot { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--stroke);
+          font-size: 14px; color: var(--tertiary); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Support</p>
+  <h1>Pivot Tables for Jira</h1>
+  <p class="lead">Turns your Jira issues into a pivot table. Write a query, drag fields into rows and columns, total and average them, and click any number to see the issues behind it.</p>
+
+  <h2>Get help</h2>
+  <div class="card">
+    <p style="margin:0"><strong><a href="https://github.com/muhzuhaib/pivot-tables-for-jira/issues">Report a problem or ask a question</a></strong></p>
+    <p style="margin:6px 0 0; font-size:14px; color:var(--tertiary)">Please include the query you used and what you expected to see. Please do not paste issue contents from a site that is not yours.</p>
+  </div>
+
+  <h2>Questions</h2>
+
+  <h3>What does it do?</h3>
+  <p>It reads the issues that match a Jira query you write and lays them out as a pivot table. Drag a field into Rows and another into Columns, choose what to count or add up, and the table builds itself. Switch to a heatmap to see where the weight sits, or to the bar chart view for a quick read. Click any number and the issues behind it are listed, each one a link into Jira.</p>
+
+  <h3>Which fields can I pivot on?</h3>
+  <p>Every field your site has, standard and custom, read from your site when the app starts. If your site uses story points, story points are there too. Nothing is hardcoded, so custom fields with your own names work the same as the standard ones.</p>
+
+  <h3>How much can it load?</h3>
+  <p>Large queries load in pages, with progress shown and a stop button at any time. The app tells you plainly if a query is too large and suggests narrowing it. A query is required to be bounded (a project, a date range or a person), which Jira itself asks for.</p>
+
+  <h3>Does it change anything in Jira?</h3>
+  <p>No. The app is read-only. It never creates, edits or deletes an issue, a comment or a field.</p>
+
+  <h3>Can my team see what I built?</h3>
+  <p>Yes. Saved pivots are shared by default: everyone on your site sees the list of saved pivots, can load any of them, and can duplicate one to make it their own. Only the person who saved a pivot can delete it.</p>
+
+  <h3>Can I put a pivot on a dashboard?</h3>
+  <p>Yes. Add the Pivot Tables gadget (or widget, on the new dashboards) and choose which saved pivot it shows. Clicking through opens the full page.</p>
+
+  <h3>Can I export?</h3>
+  <p>Yes, in two ways: the pivot table as it is on screen, or the row data behind it, one line per issue. Both are plain CSV files that open in any spreadsheet.</p>
+
+  <h3>Does it work on any Jira plan?</h3>
+  <p>Any Jira Cloud site where you can view issues. The results follow your own Jira permissions, so the app never shows you an issue you could not open in Jira itself.</p>
+
+  <h3>What does it cost?</h3>
+  <p>Free for teams of up to 10 users. Beyond that it is 1.25 US dollars per user per month, billed by Atlassian on your existing Jira bill, with a 30 day trial. There is no separate account and no card to enter anywhere.</p>
+
+  <div class="foot">
+    <p><a href="privacy.html">Privacy policy</a></p>
+    <p>Pivot Tables for Jira is published by zuhaib.</p>
+  </div>
+</main>
+</body>
+</html>
